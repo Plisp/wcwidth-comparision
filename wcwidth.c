@@ -11,7 +11,7 @@ extern int xterm_wcwidth(wchar_t ucs, char is_cjk);
 
 int main(int argc) {
   setlocale(LC_ALL, "");
-  char cjk = (argc == 1);
+  char cjk = (argc == 2);
   char s[5];
   puts("┌char─────┬w─┬r─┬x─┐");
   for (int i = 0; i < 0x10FFFF; i++) {
